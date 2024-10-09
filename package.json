@@ -13,7 +13,9 @@
     "next": "^14.2.14",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^4.11.0"
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^4.11.0",
+    "sass": "^1.79.4"
   },
   "devDependencies": {
     "@types/node": "^20",

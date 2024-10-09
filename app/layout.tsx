@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
+import './css/globals.scss';
 import Navbar from './components/navbar';
+import './css/card.scss';
 
 // Import Inter font if needed
 import { Inter } from 'next/font/google';
