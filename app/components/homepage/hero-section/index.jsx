@@ -7,10 +7,18 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import Image from "next/image";
 
 function HeroSection() {
   return (
     <section className="relative flex items-center justify-center min-h-screen py-4 lg:py-12">
+        <Image
+        src="/sectionN1.svg"
+        alt="Hero"
+        width={1572}
+        height={795}
+        className="absolute -top-[98px] -z-10"
+      />
       <div className="flex flex-col items-center justify-center text-center">
         <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem] mb-6">
           Hello, <br />
