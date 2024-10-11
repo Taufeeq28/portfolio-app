@@ -11,9 +11,9 @@ export const projectsData = [
     },
     {
         id: 2,
-        name: 'BugHub Data Pipeline & Knowledge Graph for StackOverflow and GitHub',
-        description: "Configured data pipeline to pull data from Stack Overflow and GitHub using Python scripts and APIs and stored in EdgeDB. Generated python script for data analysis from repositories and tags, stored data in DataFrames and used Pandas for analysis. Employed EdgeQL and GraphQL to create object-relational data models for GitHub and StackOverflow.",
-        tools: ['Python', 'EdgeDB', 'EdgeQL', 'GraphQL', 'Pandas'],
+        name: 'Lively Chat App',
+        description: "Lively Chat App is a real-time messaging platform built with the MERN stack, WebSocket technology, and an integrated SMTP server for email functionality. It ensures secure user authentication and authorization, allowing only verified users to join. Users can personalize their profiles by selecting custom avatars, enhancing their chat experience. The app provides responsive communication across devices, ensuring seamless real-time conversations. With email notifications, robust security, and personalization features, Lively Chat App is perfect for both casual and professional use.",
+        tools: ['React', 'MongoDB', 'Express', 'NodeJS', 'Websocket', 'SMTP server'],
         role: 'Developer',
         code: '',
         demo: '',
@@ -28,5 +28,15 @@ export const projectsData = [
         code: '',
         demo: '',
         image: '/MediaReviewHub.jpg'
-    }
+    },
+    // {
+    //     id: 4,
+    //     name: 'BugHub Data Pipeline & Knowledge Graph for StackOverflow and GitHub',
+    //     description: "Configured data pipeline to pull data from Stack Overflow and GitHub using Python scripts and APIs and stored in EdgeDB. Generated python script for data analysis from repositories and tags, stored data in DataFrames and used Pandas for analysis. Employed EdgeQL and GraphQL to create object-relational data models for GitHub and StackOverflow.",
+    //     tools: ['Python', 'EdgeDB', 'EdgeQL', 'GraphQL', 'Pandas'],
+    //     role: 'Developer',
+    //     code: '',
+    //     demo: '',
+    //     image: '/LivelyChatApp.jpg'
+    // },
 ];
