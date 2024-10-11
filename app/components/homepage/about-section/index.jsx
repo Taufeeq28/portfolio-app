@@ -17,7 +17,7 @@ function AboutSection() {
       <div className="flex justify-center order-1 lg:order-1">
           <Image
             src="/pic.jpg"
-            width={280}
+            width={380}
             height={280}
             alt="Taufeeq Ahmed"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
@@ -28,8 +28,7 @@ function AboutSection() {
             Who I am?
           </p>
           <p className="text-gray-200 text-sm lg:text-lg">
-          {`My name is Taufeeq. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. 
-I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.`}
+          {`My name is Taufeeq, and I am a skilled full-stack developer with a focus on building dynamic web applications using React, .NET Core MVC, WebAPI, and PostgreSQL. I thrive in creating efficient, scalable solutions, and I have a strong foundation in both frontend and backend development. Beyond full-stack development, I am deeply involved in the field of artificial intelligence, specializing in Deep Learning, Neural Networks (ANN, RNN, LSTM), and Natural Language Processing with tools like Transformers, LangChain, and Hugging Face. I work extensively with Generative AI, exploring areas such as vector databases (FAISS, ChromaDB) and advanced LLMs like Llama3 and Gemma2. Additionally, I have experience deploying AI solutions on AWS, Azure, and Lamini AI Cloud, utilizing services like AWS SageMaker, Bedrock, and Lambda. My passion for innovation drives me to continuously learn and explore technologies like multi-AI agents, Langraph, and other AI orchestration tools.`}
           </p>
         </div>
         

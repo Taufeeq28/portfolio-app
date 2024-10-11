@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-
+import { ToastContainer } from 'react-toastify';
+import Footer from './components/footer';
 import './css/globals.scss';
 import Navbar from './components/navbar';
 import './css/card.scss';
@@ -26,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${inter.className}`}>
+      <ToastContainer />
         <main className="min-h-screen mx-5 md:mx-8 lg:mx-12 xl:mx-16 2xl:mx-24">
           <Navbar />
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

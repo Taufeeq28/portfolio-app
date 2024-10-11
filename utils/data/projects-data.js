@@ -17,70 +17,16 @@ export const projectsData = [
         role: 'Developer',
         code: '',
         demo: '',
-        image: ''
+        image: '/LivelyChatApp.jpg'
     },
     {
         id: 3,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
+        name: 'Media Review Hub',
+        description: "Media Review Hub is a Razor Pages web app for tracking and reviewing movies, books, and games. Built with C#, ASP.NET Core, and PostgreSQL, it features CRUD operations, autocomplete for media titles, and a clean UI. The app integrates with the TVMaze and Open Library APIs, allowing users to easily search for and add reviews on a wide range of media.",
+        tools: ['C#', 'ASP.NET Core', 'PostgreSQL', 'Razor Pages'],
         role: 'Developer',
         code: '',
         demo: '',
-        image: ''
-    },{
-        id: 4,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
-    },{
-        id: 5,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
-    },{
-        id: 6,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
-    },{
-        id: 7,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
-    },{
-        id: 8,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
-    },{
-        id: 9,
-        name: 'Smart Gadgets Website',
-        description: "Developed Smart Gadgets website using Spring MVC with Hibernate for data persistence and MySQL for transactions. Incorporated Agile methodology for iterative development, Yelp API for customer reviews and Google Charts for visualization.",
-        tools: ['Spring MVC', 'Hibernate', 'MySQL', 'Yelp API', 'Google Charts'],
-        role: 'Developer',
-        code: '',
-        demo: '',
-        image: ''
+        image: '/MediaReviewHub.jpg'
     }
 ];
