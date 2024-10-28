@@ -2,7 +2,7 @@ export const personalData = {
   name: "Taufeeq Ahmed ",
   profile: '/pic.jpg',
   designation: "Software Developer",
-  description: "My name is Taufeeq, and I am a skilled full-stack developer with a focus on building dynamic web applications using React, .NET Core MVC, WebAPI, and PostgreSQL. I thrive in creating efficient, scalable solutions, and I have a strong foundation in both frontend and backend development. Beyond full-stack development, I am deeply involved in the field of artificial intelligence, specializing in Deep Learning, Neural Networks (ANN, RNN, LSTM), and Natural Language Processing with tools like Transformers, LangChain, and Hugging Face. I work extensively with Generative AI, exploring areas such as vector databases (FAISS, ChromaDB) and advanced LLMs like Llama3 and Gemma2. Additionally, I have experience deploying AI solutions on AWS, Azure, and Lamini AI Cloud, utilizing services like AWS SageMaker, Bedrock, and Lambda. My passion for innovation drives me to continuously learn and explore technologies like multi-AI agents, Langraph, and other AI orchestration tools.",
+  description: "My name is Taufeeq, and I’m a full-stack developer specializing in building web applications with React, .NET Core, and PostgreSQL. I enjoy creating scalable, efficient solutions and have a solid background in both frontend and backend development. I also explore artificial intelligence, working with deep learning, neural networks, and natural language processing using tools like Transformers and Hugging Face. I’m constantly learning and pushing the boundaries of technology.",
   email: 'sameerahmed6686@gmail.com',
   phone: '+1 7733137109',
   address: 'Chicago, IL',

@@ -45,9 +45,11 @@ function Experience() {
               <p className="text-sm text-gray-400 mb-4">
                 {experience.duration}
               </p>
-              <p className="text-lg text-white leading-relaxed">
-                {experience.description.join('. ')}
-              </p>
+              <ul className="list-disc list-inside text-lg text-white leading-relaxed">
+                {experience.description.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

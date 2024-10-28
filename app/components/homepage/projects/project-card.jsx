@@ -2,6 +2,7 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import GlowCard from '../../lottiehelper/glow-card';  // Adjust path as necessary
 
 function ProjectCard({ project }) {
@@ -27,11 +28,21 @@ function ProjectCard({ project }) {
           <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3'>
             {project.description}
           </p>
+          <div className="flex space-x-4 mt-4">
+            {project.demo && (
+              <Link href={project.demo} target='_blank' className='flex items-center text-[#e09e3c] hover:text-white'>
+                <FaExternalLinkAlt className='inline mr-1' /> Demo
+              </Link>
+            )}
+            {project.code && (
+              <Link href={project.code} target='_blank' className='flex items-center text-[#e09e3c] hover:text-white'>
+                <FaGithub className='inline mr-1' /> GitHub
+              </Link>
+            )}
+          </div>
           {project.url && (
-            <Link href={project.url} target='_blank'>
-              <a className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs hover:bg-violet-600 transition duration-300'>
-                More Info
-              </a>
+            <Link href={project.url} target='_blank' className='bg-violet-500 text-white px-3 py-1.5 rounded-full text-xs hover:bg-violet-600 transition duration-300 mt-4'>
+              More Info
             </Link>
           )}
         </div>
