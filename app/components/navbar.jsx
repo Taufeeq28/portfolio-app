@@ -48,6 +48,11 @@ function Navbar() {
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-orange-300">PROJECTS</div></Link>
           </li>
+          {/* <li>
+            <Link href="/#chat-assistant" className="text-white text-lg hover:text-orange-300">
+              CHAT ASSISTANT
+            </Link>
+          </li> */}
         </ul>
       </div>
 
@@ -83,6 +88,7 @@ function Navbar() {
               PROJECTS
             </Link>
           </li>
+          
         </ul>
       </div>
     </nav>

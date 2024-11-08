@@ -11,6 +11,16 @@ export const projectsData = [
     },
     {
         id: 2,
+        name: 'AI Assistant Hub',
+        description: "A powerful AI assistant application built with Streamlit and GROQ AI, offering chat capabilities, resume optimization, and content analysis. Features include document processing with multiple file support, YouTube video summarization, website article analysis, multilingual support, and advanced AI models integration (Mixtral 8x7B, LLaMA2 70B, Claude 3 Opus). The app provides context-aware responses, smart text extraction, and detailed analysis capabilities across various content types.",
+        tools: ['Python', 'Streamlit', 'GROQ AI', 'LangChain', 'YouTube API', 'BeautifulSoup4'],
+        role: 'Developer',
+        code: 'https://github.com/Taufeeq28/GenAiChatAppOllama',
+        demo: 'https://aichat-contentassistant.streamlit.app/',
+        image: '/ai-assistant.jpg'
+    },
+    {
+        id: 3,
         name: 'Lively Chat App',
         description: "Lively Chat App is a real-time messaging platform built with the MERN stack, WebSocket technology, and an integrated SMTP server for email functionality. It ensures secure user authentication and authorization, allowing only verified users to join. Users can personalize their profiles by selecting custom avatars, enhancing their chat experience. The app provides responsive communication across devices, ensuring seamless real-time conversations. With email notifications, robust security, and personalization features, Lively Chat App is perfect for both casual and professional use.",
         tools: ['React', 'MongoDB', 'Express', 'NodeJS', 'Websocket', 'SMTP server'],
@@ -20,7 +30,7 @@ export const projectsData = [
         image: '/LivelyChatApp.jpg'
     },
     {
-        id: 3,
+        id: 4,
         name: 'Media Review Hub',
         description: "Media Review Hub is a Razor Pages web app for tracking and reviewing movies, books, and games. Built with C#, ASP.NET Core, and PostgreSQL, it features CRUD operations, autocomplete for media titles, and a clean UI. The app integrates with the TVMaze and Open Library APIs, allowing users to easily search for and add reviews on a wide range of media.",
         tools: ['C#', 'ASP.NET Core', 'PostgreSQL', 'Razor Pages'],
@@ -29,5 +39,4 @@ export const projectsData = [
         demo: '',
         image: '/MediaReviewHub.jpg'
     },
-    
 ];

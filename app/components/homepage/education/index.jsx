@@ -19,81 +19,63 @@ function Education() {
       
       <div className="flex justify-center my-5 lg:py-8">
         <div className="flex items-center">
-          <span className="w-24 h-[2px] bg-[#343434]"></span>
-          <span className="bg-[#343434] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <span className="w-12 md:w-24 h-[2px] bg-[#343434]"></span>
+          <span className="bg-[#343434] w-fit text-white p-2 px-5 text-lg md:text-xl rounded-md">
             Education
           </span>
-          <span className="w-24 h-[2px] bg-[#343434]"></span>
+          <span className="w-12 md:w-24 h-[2px] bg-[#343434]"></span>
         </div>
       </div>
 
-      <div className="timeline" style={{ position: 'relative', width: '100%' }}>
-        <div style={{
-          content: "''",
-          position: 'absolute',
-          width: '2px',
-          background: '#efab23',
-          top: 0,
-          bottom: 0,
-          left: '50%',
-          marginLeft: '-1px'
-        }}></div>
+      <div className="timeline relative w-full">
+        {/* Desktop timeline line */}
+        <div className="hidden md:block absolute w-[2px] bg-[#efab23] top-0 bottom-0 left-1/2 -ml-[1px]"></div>
         
+        {/* Mobile timeline line */}
+        <div className="md:hidden absolute w-[2px] bg-[#efab23] top-0 bottom-0 left-[20px]"></div>
+
         {educations.map((education, index) => (
-          <div className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`} key={education.id} style={{
-            position: 'relative',
-            background: 'inherit',
-            width: '50%',
-            marginBottom: '30px',
-            left: index % 2 === 0 ? '0' : '50%',
-            paddingRight: index % 2 === 0 ? '30px' : '0',
-            paddingLeft: index % 2 === 0 ? '0' : '30px'
-          }}>
-            <div className="timeline-date" style={{
-              position: 'absolute',
-              width: '100%',
-              top: '44px',
-              fontSize: '16px',
-              fontWeight: '600',
-              color: '#efab23',
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              zIndex: 1,
-              textAlign: index % 2 === 0 ? 'left' : 'right',
-              [index % 2 === 0 ? 'left' : 'right']: 'calc(100% + 55px)'
-            }}>
+          <div 
+            key={education.id}
+            className={`
+              timeline-item relative mb-[30px]
+              w-full pl-[60px]
+              md:w-1/2 md:pl-0
+              ${index % 2 === 0 
+                ? 'md:left-0 md:pr-[30px]' 
+                : 'md:left-1/2 md:pl-[30px]'
+              }
+            `}
+          >
+            {/* Date indicator */}
+            <div className={`
+              absolute z-[1] text-[#efab23] font-semibold uppercase tracking-wider
+              top-0 left-[60px]
+              md:top-[44px] md:w-full
+              ${index % 2 === 0 
+                ? 'md:left-[calc(100%+55px)] md:text-left' 
+                : 'md:right-[calc(100%+55px)] md:text-right md:left-auto'
+              }
+            `}>
               {education.duration}
             </div>
-            
+
             <GlowCard identifier={`education-${education.id}`}>
-              <div className="timeline-text" style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '30px',
-                background: 'rgba(255, 255, 255, 0.1)', // Transparent background
-                position: 'relative',
-                borderRight: index % 2 === 0 ? '5px solid #dddddd' : 'none',
-                borderLeft: index % 2 !== 0 ? '5px solid #dddddd' : 'none',
-                boxShadow: '0 0 60px rgba(0, 0, 0, .08)',
-              }}>
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 p-6 bg-opacity-10 bg-white relative">
                 {/* Text content */}
-                <div style={{ textAlign: 'left', flexGrow: 1 }}>
-                  <h2 style={{ margin: '0 0 5px 0', fontSize: '22px', fontWeight: '600' }}>
+                <div className="flex-grow">
+                  <h2 className="text-lg md:text-2xl font-semibold mb-2">
                     {education.institution}
                   </h2>
-                  <h4 style={{ margin: '0 0 10px 0', fontSize: '16px', fontStyle: 'italic', fontWeight: '400' }}>
+                  <h4 className="text-sm md:text-base italic font-normal mb-2">
                     {education.title}
                   </h4>
-                  <p style={{ margin: '0', fontSize: '16px' }}>
-                    {education.description}
-                  </p>
                 </div>
 
-                {/* Education Image on the right */}
-                <div style={{ marginLeft: '15px' }}>
+                {/* Education Image */}
+                <div className="flex-shrink-0">
                   <Image 
-                    src={education.imageSrc} // Assumes educations have an imageSrc property
+                    src={education.imageSrc}
                     alt={education.institution}
                     width={80}
                     height={80}
@@ -101,39 +83,24 @@ function Education() {
                   />
                 </div>
 
-                {/* Arrow element */}
-                <div style={{
-                  position: 'absolute',
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  ...(index % 2 === 0 ? { 
-                    right: '-15px', 
-                    borderLeft: '10px solid rgba(255, 255, 255, 0.1)',
-                    borderTop: '10px solid transparent',
-                    borderBottom: '10px solid transparent'
-                  } : { 
-                    left: '-15px', 
-                    borderRight: '10px solid rgba(255, 255, 255, 0.1)',
-                    borderTop: '10px solid transparent',
-                    borderBottom: '10px solid transparent'
-                  })
-                }}></div>
+                {/* Border styling */}
+                <div className={`
+                  hidden md:block absolute inset-y-0 w-[5px] bg-[#dddddd]
+                  ${index % 2 === 0 ? 'right-0' : 'left-0'}
+                `} />
               </div>
             </GlowCard>
-            
-            <div style={{
-              content: "''",
-              position: 'absolute',
-              width: '16px',
-              height: '16px',
-              top: '48px',
-              right: index % 2 === 0 ? '-8px' : 'auto',
-              left: index % 2 !== 0 ? '-8px' : 'auto',
-              background: '#ffffff',
-              border: '2px solid #efab23',
-              borderRadius: '16px',
-              zIndex: 1
-            }}></div>
+
+            {/* Timeline dot */}
+            <div className={`
+              absolute w-4 h-4 bg-white border-2 border-[#efab23] rounded-full z-10
+              top-[48px] left-[13px]
+              md:left-auto
+              ${index % 2 === 0 
+                ? 'md:right-[-8px] md:left-auto' 
+                : 'md:left-[-8px]'
+              }
+            `} />
           </div>
         ))}
       </div>

@@ -5,6 +5,7 @@ import Skills from "./components/homepage/skills";
 import Projects from "./components/homepage/projects";
 import Education from "./components/homepage/education";
 import ContactSection from "./components/homepage/contact";
+//import ChatAssistant from "./components/chatAssistant/ChatAssistant";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
   <Skills/>
   <Projects/>
   <Education/>
+  {/* <ChatAssistant /> */}
   <ContactSection />
   </>)
 }
