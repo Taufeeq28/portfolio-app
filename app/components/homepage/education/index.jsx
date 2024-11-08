@@ -93,14 +93,14 @@ function Education() {
 
             {/* Timeline dot */}
             <div className={`
-              absolute w-4 h-4 bg-white border-2 border-[#efab23] rounded-full z-10
-              top-[48px] left-[13px]
-              md:left-auto
-              ${index % 2 === 0 
-                ? 'md:right-[-8px] md:left-auto' 
-                : 'md:left-[-8px]'
-              }
-            `} />
+  absolute w-4 h-4 bg-white border-2 border-[#efab23] rounded-full z-10
+  top-[48px] left-[13px]
+  md:top-[44px] md:left-auto
+  ${index % 2 === 0 
+    ? 'md:right-[-10px] md:left-auto' 
+    : 'md:left-[-10px]'
+  }
+`} />
           </div>
         ))}
       </div>
