@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen py-4 lg:py-12">
+    <section className="relative flex items-center justify-center min-h-[80vh] py-4">
       <Image
         src="/sectionN1.svg"
         alt="Hero"
